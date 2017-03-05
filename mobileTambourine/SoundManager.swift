@@ -27,10 +27,10 @@ class Sound: NSObject {
   }
   
   func createSnd() -> AVAudioPlayer {
-    let sndUrl = NSURL(
+    let sndUrl = URL(
       fileURLWithPath:
-      NSBundle.mainBundle().pathForResource(
-        self.filename,
+      Bundle.main.path(
+        forResource: self.filename,
         ofType: "wav"
         )!
     )
@@ -48,7 +48,7 @@ class Sound: NSObject {
     var error:NSError?
     let snd: AVAudioPlayer!
     do {
-      snd = try AVAudioPlayer(contentsOfURL: sndUrl)
+      snd = try AVAudioPlayer(contentsOf: sndUrl)
     } catch let error1 as NSError {
       error = error1
       snd = nil
@@ -77,8 +77,8 @@ class SoundManager: NSObject {
     self.tambourineSound = Sound(filename: "tambourine", maxPolyphony: 20)
   }
   
-  func playSoundWithName(name:String) {
-    dispatch_async(dispatch_get_main_queue(), { [weak self] () -> Void in
+  func playSoundWithName(_ name:String) {
+    DispatchQueue.main.async(execute: { [weak self] () -> Void in
       switch(name) {
       case "tambourine":
         self?.tambourineSound.play()
