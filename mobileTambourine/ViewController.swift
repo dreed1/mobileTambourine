@@ -8,13 +8,16 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, MotionManagerDelegate {
   var soundManager: SoundManager!
+  var motionManager: MotionManager!
 
   override func viewDidLoad() {
     super.viewDidLoad()
     // Do any additional setup af
     self.soundManager = SoundManager()
+    self.motionManager = MotionManager()
+    motionManager.delegate = self
     bindToView()
   }
 
@@ -25,5 +28,9 @@ class ViewController: UIViewController {
   
   func playTambourine() {
     soundManager.playTambourine()
+  }
+  
+  func phoneWasShaken() {
+    playTambourine()
   }
 }

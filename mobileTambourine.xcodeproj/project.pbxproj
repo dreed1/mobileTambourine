@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		37213FA91E6CBD0200740234 /* tambourine.wav in Resources */ = {isa = PBXBuildFile; fileRef = 37213FA81E6CBD0200740234 /* tambourine.wav */; };
+		37213FAB1E6CBF1200740234 /* MotionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37213FAA1E6CBF1200740234 /* MotionManager.swift */; };
 		3728E55B1E6CB0B0007C68E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3728E55A1E6CB0B0007C68E3 /* AppDelegate.swift */; };
 		3728E55D1E6CB0B0007C68E3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3728E55C1E6CB0B0007C68E3 /* ViewController.swift */; };
 		3728E5601E6CB0B0007C68E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3728E55E1E6CB0B0007C68E3 /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		37213FA81E6CBD0200740234 /* tambourine.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = tambourine.wav; sourceTree = "<group>"; };
+		37213FAA1E6CBF1200740234 /* MotionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MotionManager.swift; sourceTree = "<group>"; };
 		3728E5571E6CB0B0007C68E3 /* mobileTambourine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mobileTambourine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3728E55A1E6CB0B0007C68E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3728E55C1E6CB0B0007C68E3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				3728E5631E6CB0B0007C68E3 /* LaunchScreen.storyboard */,
 				3728E5661E6CB0B0007C68E3 /* Info.plist */,
 				3728E56E1E6CB39E007C68E3 /* SoundManager.swift */,
+				37213FAA1E6CBF1200740234 /* MotionManager.swift */,
 			);
 			path = mobileTambourine;
 			sourceTree = "<group>";
@@ -110,6 +113,7 @@
 				TargetAttributes = {
 					3728E5561E6CB0B0007C68E3 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = NFP254J253;
 						LastSwiftMigration = 0820;
 					};
 				};
@@ -154,6 +158,7 @@
 				3728E55D1E6CB0B0007C68E3 /* ViewController.swift in Sources */,
 				3728E55B1E6CB0B0007C68E3 /* AppDelegate.swift in Sources */,
 				3728E56F1E6CB39E007C68E3 /* SoundManager.swift in Sources */,
+				37213FAB1E6CBF1200740234 /* MotionManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,6 +271,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = NFP254J253;
 				INFOPLIST_FILE = mobileTambourine/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = novaware.mobileTambourine;
@@ -278,6 +284,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = NFP254J253;
 				INFOPLIST_FILE = mobileTambourine/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = novaware.mobileTambourine;
